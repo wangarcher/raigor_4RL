@@ -1,0 +1,11 @@
+<launch>
+
+    <node pkg="octomap_server" type="octomap_server_node" args="$(find raigor_general_perception)/map/minelike.bt" name="octomap_server">
+        <param name="resolution" value="0.5" />
+	</node>
+
+    <include file="$(find raigor_general_perception)/launch/raigor_gazebo_odom.launch"/>
+
+    <node pkg="tf" type="static_transform_publisher" name="map_2_odom" args="0 0 0 0 0 0 /map /odom 100"/>
+
+</launch>

@@ -1,0 +1,5 @@
+<launch>
+
+  <node name="raigor_qr" pkg="raigor_general_perception" type="raigor_qr" />
+
+</launch>

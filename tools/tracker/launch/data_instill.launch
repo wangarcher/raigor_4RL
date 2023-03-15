@@ -1,0 +1,5 @@
+<launch>
+
+  <node pkg="tracker" type="tracker" name="a_good_tracker" output="screen" />
+
+</launch>

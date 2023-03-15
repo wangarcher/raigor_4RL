@@ -1,0 +1,5 @@
+<launch>
+
+  <!-- <node name="raigor_odometry" pkg="raigor_general_perception" type="raigor_odometry" /> -->
+ <node pkg="tf" type="static_transform_publisher" name="base_footprint_2_base_link" args="0 0 0 0 0 0 /odom /base_footprint 100"/>
+</launch>

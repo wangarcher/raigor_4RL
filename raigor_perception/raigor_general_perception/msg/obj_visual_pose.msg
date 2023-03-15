@@ -1,0 +1,4 @@
+int64 obj_visual_u
+int64 obj_visual_v
+int64 obj_visual_dist
+float64 obj_visual_t

@@ -1,0 +1,4 @@
+<launch>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find raigor_general_perception)/rviz/all.rviz" required="true" />
+
+</launch>

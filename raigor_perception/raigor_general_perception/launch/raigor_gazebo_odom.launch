@@ -1,0 +1,13 @@
+<launch>
+    <node pkg="raigor_general_perception" type="raigor_gazebo_odom" name="odom_groundturth_tf" output="screen">
+      <param name="odom_topic" value="/base_pose_ground_truth"/>
+      <param name="parent_frame" value="/odom"/>
+      <param name="child_frame" value="/base_footprint"/>
+      <param name="path_enable" value="true"/>
+      <param name="path_topic" value="/ls_path_gt"/>
+      <param name="path_dist_topic" value="/traveling_dist"/>
+      <param name="path_points_topic" value="/ls_path_points_gt" />
+      <param name="path_dist_threshold" value="0.1"/>
+      <param name="path_angle_threshold" value="2"/>
+    </node>
+</launch>
