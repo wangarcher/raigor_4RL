@@ -1,21 +1,22 @@
-<launch><!--ros controller-->>
+<launch>
 
     <!-- these are the arguments you can pass this launch file, for example paused:=true -->
-    <arg name="paused" default="true"/>
-    <arg name="use_sim_time" value="true"/>
-    <arg name="gui" value="true"/>
-    <arg name="headless" value="false"/> <!-- Inert - see gazebo_ros_pkgs issue #491 -->
-    <arg name="recording" value="false"/>
-    <arg name="debug" value="false"/>
+    <arg name="paused" default="true" />
+    <arg name="use_sim_time" value="true" />
+    <arg name="gui" value="true" />
+    <arg name="headless" value="false" /> <!-- Inert - see gazebo_ros_pkgs issue #491 -->
+    <arg name="recording" value="false" />
+    <arg name="debug" value="false" />
 
-    <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+    <!-- We resume the logic in empty_world.launch, changing only the name of the world to be
+    launched -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name" value="$(find raigor_gazebo)/world/maze11v2.world"/>
+        <arg name="world_name" value="$(find raigor_gazebo)/world/maze11v2.world" />
         <arg name="debug" value="$(arg debug)" />
         <arg name="gui" value="$(arg gui)" />
-        <arg name="paused" value="$(arg paused)"/>
-        <arg name="use_sim_time" value="$(arg use_sim_time)"/>
-        <arg name="headless" value="$(arg headless)"/>
+        <arg name="paused" value="$(arg paused)" />
+        <arg name="use_sim_time" value="$(arg use_sim_time)" />
+        <arg name="headless" value="$(arg headless)" />
     </include>
 
 </launch>
